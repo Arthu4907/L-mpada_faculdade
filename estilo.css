@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.5s;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+#lampada {
+    font-size: 160px;
+    margin-bottom: 40px;
+    filter: brightness(0);
+    transition: 0.5s;
+}
+
+button {
+    background: #333333;
+    color: white;
+    border: 2px solid white;
+    padding: 18px 40px;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+/* Quando a lâmpada estiver acesa */
+
+body.acesa {
+    background: radial-gradient(
+        circle,
+        #fff5a3 0%,
+        #ffdb4d 35%,
+        #ff9900 100%
+    );
+    color: #442900;
+}
+
+body.acesa #lampada {
+    filter: brightness(1.5);
+    text-shadow:
+        0 0 20px yellow,
+        0 0 50px orange,
+        0 0 100px yellow,
+        0 0 150px white;
+}
+
+body.acesa button {
+    background: #ffae00;
+    color: #222;
+    border-color: #fff;
+}
