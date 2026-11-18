@@ -1,16 +1,2 @@
 
-let ligada = false;
-
-function ligarDesligar() {
-    const lampada = document.getElementById("lampada");
-
-    ligada = !ligada;
-
-    if (ligada) {
-        lampada.innerHTML = "💡";
-        document.body.classList.add("acesa");
-    } else {
-        lampada.innerHTML = "⚫";
-        document.body.classList.remove("acesa");
-    }
-}
+var _0x4a21 = ["lampada", "💡", "acesa", "⚫", "classList", "add", "remove"]; var _0x8f31 = false; function ligarDesligar() { var _0x2b10 = document["getElementById"](_0x4a21[0]); _0x8f31 = !_0x8f31; if (_0x8f31) { _0x2b10["innerHTML"] = _0x4a21[1]; document["body"][_0x4a21[4]][_0x4a21[5]](_0x4a21[2]); } else { _0x2b10["innerHTML"] = _0x4a21[3]; document["body"][_0x4a21[4]][_0x4a21[6]](_0x4a21[2]); } }
